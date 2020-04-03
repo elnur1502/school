@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor
 from vk_api.longpoll import VkLongPoll, VkEventType
 
-token = "e615070ecbd0a9642205948dbe49728785555494f701852aabe742313bc7eee4dbdd7447ffeca14003479" #token
+token = "7fe8d5b1bce0375d43e59bd1c4b7469d1f0eee64c9c9cb281dd4fcd08d2e7d49f2304478a5ba9ae3a0853" #token
 
 # Авторизуемся как сообщество
 vk = vk_api.VkApi(token=token)
@@ -131,7 +131,7 @@ def gamesInfoPage(userID, req):
                     root_childsAU[b].replace("\n", "").replace(" ", "").replace("  ", "").replace("\r", "").replace("$",
                                                                                                                     "").replace(
                         ".", "").replace(",00", "").replace("+", "").replace("Gratis", "0")).split(",")[0]
-            priceAU = (float(float(s) * dob))
+            priceAU = (float(float(s) * 1))
         except:
            priceAU = 0
 
